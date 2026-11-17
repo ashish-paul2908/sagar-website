@@ -153,16 +153,22 @@ export const RELEASES: Release[] = [
 ]
 
 export const LIVE = {
-  headline: 'Five cities. Early 2027.',
-  body: 'A national tour behind aakhri tohfa is on its way — the EP is the reason to tour, and the stage is where it lands. Dates drop for the Daisies first.',
+  cities: 5,
+  window: 'Feb–Mar ’27',
+  note: 'five cities · early 2027',
+  body: 'Cities and dates are being locked in right now. Daisies hear first — and get first dibs on tickets.',
+}
+
+export const BOOKING = {
+  body: 'Festivals, college fests, weddings, private and corporate events, brand partnerships, sync and co-writes. Tell us what you have in mind and management will get back to you.',
   formats: [
-    { name: 'Solo', detail: 'Voice and acoustic guitar. Intimate rooms, residencies, weddings.' },
-    { name: 'Duo', detail: 'A stripped-back pair for private events and smaller stages.' },
-    { name: 'Five-piece', detail: 'Keys, electric guitar, bass and drums. Festivals, college fests, headline shows.' },
+    { name: 'Solo', detail: 'Voice and acoustic guitar — intimate rooms, residencies, weddings.' },
+    { name: 'Duo', detail: 'Stripped back, for private events and smaller stages.' },
+    { name: 'Five-piece', detail: 'Keys, electric guitar, bass and drums — festivals, college fests, headline shows.' },
   ],
 }
 
 export const DAISIES = {
   body: 'Around the music is The Daisies — 12,000+ people who came for the songs, stayed because they felt a little less alone in them, and found a home in the music and in each other.',
-  perks: ['First access to tour tickets', 'Exclusive drops around the EP', 'Unreleased songs and voice notes, now and then'],
+  perks: ['First dibs on tour tickets', 'Exclusive drops around the EP', 'Unreleased songs & voice notes'],
 }

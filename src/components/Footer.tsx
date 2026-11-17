@@ -12,7 +12,7 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="wrap footer__grid">
-        <img src="./logo.webp" alt="Sagar Verma" className="footer__logo" width="280" height="250" loading="lazy" />
+        <img src="./logo-ink.webp" alt="Sagar Verma" className="footer__logo" width="280" height="250" loading="lazy" />
         <div>
           <p className="kicker kicker--sm">Follow</p>
           <ul className="footer__links">

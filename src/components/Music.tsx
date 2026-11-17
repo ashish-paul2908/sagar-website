@@ -16,7 +16,7 @@ export function Music() {
         <div className="section-head" data-reveal>
           <p className="kicker">Music</p>
           <h2 className="h2">
-            Twenty-six songs out. <span className="serif-i">Seven hundred written.</span>
+            Twenty-six songs out. <span className="hand">Seven hundred written.</span>
           </h2>
           <div className="pills">
             {platforms.map(([label, href]) => (
@@ -46,7 +46,7 @@ export function Music() {
         <div className="spotify-wide" data-reveal>
           <iframe
             title="Sagar Verma on Spotify"
-            src="https://open.spotify.com/embed/artist/18lQZ09TgoILbt94KdrBpO?utm_source=generator&theme=0"
+            src="https://open.spotify.com/embed/artist/18lQZ09TgoILbt94KdrBpO?utm_source=generator"
             width="100%"
             height="352"
             loading="lazy"

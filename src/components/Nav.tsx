@@ -4,7 +4,7 @@ const items = [
   ['#ep', 'The EP'],
   ['#story', 'Story'],
   ['#music', 'Music'],
-  ['#live', 'Live'],
+  ['#live', 'Tour'],
   ['#daisies', 'Daisies'],
 ] as const
 
@@ -20,7 +20,7 @@ export function Nav() {
   return (
     <header className={`nav ${scrolled ? 'nav--solid' : ''} ${open ? 'nav--open' : ''}`}>
       <a href="#top" className="nav__logo" aria-label="Sagar Verma — home" onClick={() => setOpen(false)}>
-        <img src="./logo-mark.webp" alt="Sagar Verma" width="96" height="80" />
+        <img src="./logo-mark-ink.webp" alt="Sagar Verma" width="96" height="80" />
       </a>
       <button className="nav__toggle" aria-expanded={open} aria-controls="nav-links" onClick={() => setOpen(!open)}>
         <span className="sr-only">Menu</span>

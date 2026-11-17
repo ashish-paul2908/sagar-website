@@ -21,9 +21,11 @@ Schema lives in `supabase/migrations/`.
 
 | Table       | What it holds                         | Public access          |
 |-------------|---------------------------------------|------------------------|
-| `daisies`   | Fan-community sign-ups                | insert only            |
+| `daisies`   | Fan sign-ups (name, email, city, member no. from 12,001) | only via `join_daisy()` |
 | `enquiries` | Booking / press / collab enquiries    | insert only            |
 | `shows`     | Tour dates                            | read published rows    |
+
+Daisy membership numbers come from `next_daisy_number()` (card preview) and `join_daisy()` (sign-up; returns the member's number, or their existing one if the email already joined).
 
 ## Local development
 

@@ -5,6 +5,7 @@ import { Story } from './components/Story'
 import { Music } from './components/Music'
 import { Live } from './components/Live'
 import { Daisies } from './components/Daisies'
+import { Book } from './components/Book'
 import { Footer } from './components/Footer'
 import { useRevealAll } from './lib/hooks'
 
@@ -23,6 +24,7 @@ export default function App() {
         <Music />
         <Live />
         <Daisies />
+        <Book />
       </main>
       <Footer />
     </>

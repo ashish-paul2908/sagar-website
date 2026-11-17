@@ -17,7 +17,7 @@ export function Cover({ src, alt, title, eager }: { src: string; alt: string; ti
       )}
       {failed && (
         <div className="cover__fallback" aria-label={alt}>
-          <span className="serif-i">{title}</span>
+          <span className="hand">{title}</span>
         </div>
       )}
     </div>

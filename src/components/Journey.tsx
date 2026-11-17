@@ -6,7 +6,7 @@ function Player({ albumId, title }: { albumId: string; title: string }) {
     <iframe
       className="player"
       title={`Listen to ${title} on Spotify`}
-      src={`https://open.spotify.com/embed/album/${albumId}?utm_source=generator&theme=0`}
+      src={`https://open.spotify.com/embed/album/${albumId}?utm_source=generator`}
       width="100%"
       height="152"
       loading="lazy"
@@ -26,7 +26,7 @@ export function Journey() {
       <div className="wrap journey__head" data-reveal>
         <p className="kicker">The EP</p>
         <h2 className="h2">
-          Four songs. Four emotional states. <span className="serif-i">One story.</span>
+          Four songs. Four emotional states. <span className="hand">One story.</span>
         </h2>
         <p className="lede">{EP.intro}</p>
         <ol className="arc" aria-label="The emotional arc of the EP">
@@ -55,10 +55,10 @@ export function Journey() {
                 <p className="chapter__state">
                   <span className="dot" /> {ch.state}
                 </p>
-                <h3 className="chapter__title serif-i">{ch.title}</h3>
+                <h3 className="chapter__title hand">{ch.title}</h3>
                 {ch.gloss && <p className="chapter__gloss">“{ch.gloss}”</p>}
                 <p className="chapter__text">{ch.body}</p>
-                {ch.line && <blockquote className="chapter__line serif-i">{ch.line}</blockquote>}
+                {ch.line && <blockquote className="chapter__line hand">{ch.line}</blockquote>}
                 <dl className="chapter__meta">
                   <div>
                     <dt>Sound</dt>
@@ -92,7 +92,7 @@ export function Journey() {
 
       <div className="wrap journey__coda" data-reveal>
         <blockquote>
-          <p className="serif-i">“{EP.quote}”</p>
+          <p className="hand">“{EP.quote}”</p>
           <footer>— Sagar Verma</footer>
         </blockquote>
       </div>

@@ -15,7 +15,7 @@ export function Hero() {
         <div className="hero__copy">
           <p className="kicker">{c.done ? 'Out now' : `Out ${EP.releaseLabel}`} · the debut solo EP</p>
           <h1 className="hero__title">
-            <span className="serif-i">{EP.title}</span>
+            <span className="hand">{EP.title}</span>
           </h1>
           <p className="hero__by">Sagar Verma</p>
           <p className="hero__log">{EP.logline}</p>
@@ -63,7 +63,7 @@ export function Hero() {
           <Cover src={EP.cover} alt={`${EP.title} — EP artwork`} title={EP.title} eager />
           <Daisy className="hero__daisy" size={64} />
           <figcaption>
-            <span className="serif-i">{EP.title}</span> — “{EP.meaning}”
+            <span className="hand">{EP.title}</span> — “{EP.meaning}”
           </figcaption>
         </figure>
       </div>

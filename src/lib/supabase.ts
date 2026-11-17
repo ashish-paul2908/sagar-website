@@ -32,20 +32,33 @@ export async function fetchShows(): Promise<Show[]> {
 
 export type Result = { ok: true } | { ok: false; message: string }
 
-const friendly = (code?: string) =>
-  code === '23505'
-    ? 'duplicate'
-    : 'Something went wrong on our side. Please try again, or email us directly.'
+const friendly = (_code?: string) => 'Something went wrong on our side. Please try again, or email us directly.'
 
-export async function joinDaisies(input: { email: string; name?: string; city?: string }): Promise<Result | { ok: 'duplicate' }> {
-  const { error } = await supabase.from('daisies').insert({
-    email: input.email.trim(),
-    name: input.name?.trim() || null,
-    city: input.city?.trim() || null,
+export type JoinResult =
+  | { ok: true; memberNo: number; already: boolean }
+  | { ok: false; message: string }
+
+export async function joinDaisies(input: { name: string; email: string; city?: string }): Promise<JoinResult> {
+  const { data, error } = await supabase.rpc('join_daisy', {
+    p_name: input.name.trim(),
+    p_email: input.email.trim(),
+    p_city: input.city?.trim() || null,
   })
-  if (!error) return { ok: true }
-  const m = friendly(error.code)
-  return m === 'duplicate' ? { ok: 'duplicate' } : { ok: false, message: m }
+  const row = Array.isArray(data) ? data[0] : data
+  if (error || !row) {
+    return {
+      ok: false,
+      message:
+        error?.code === '23514' ? 'That email doesn’t look quite right — mind checking it?' : friendly(error?.code),
+    }
+  }
+  return { ok: true, memberNo: row.member_no, already: row.already_member }
+}
+
+/** The member number the next Daisy will get (for the live card preview). */
+export async function nextDaisyNumber(): Promise<number | null> {
+  const { data, error } = await supabase.rpc('next_daisy_number')
+  return error || typeof data !== 'number' ? null : data
 }
 
 export type Enquiry = {
