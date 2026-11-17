@@ -5,7 +5,7 @@ type Props = { children: ReactNode; className?: string; max?: number; style?: CS
 /**
  * A 3D card that leans toward the pointer. Children can sit at different
  * depths with `transform: translateZ(...)`; --mx/--my expose the pointer
- * position (0–100%) for glare and holographic effects.
+ * position (0-100%) for glare and holographic effects.
  */
 export function Tilt({ children, className = '', max = 14, style }: Props) {
   const ref = useRef<HTMLDivElement>(null)

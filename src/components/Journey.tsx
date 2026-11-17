@@ -93,7 +93,7 @@ export function Journey() {
       <div className="wrap journey__coda" data-reveal>
         <blockquote>
           <p className="hand">“{EP.quote}”</p>
-          <footer>— Sagar Verma</footer>
+          <footer>Sagar Verma</footer>
         </blockquote>
       </div>
     </section>

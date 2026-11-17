@@ -6,7 +6,6 @@ const platforms = [
   ['Apple Music', LINKS.apple],
   ['YouTube', LINKS.youtube],
   ['Amazon Music', LINKS.amazon],
-  ['SoundCloud', LINKS.soundcloud],
 ] as const
 
 export function Music() {

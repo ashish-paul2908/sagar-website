@@ -49,7 +49,7 @@ export async function joinDaisies(input: { name: string; email: string; city?: s
     return {
       ok: false,
       message:
-        error?.code === '23514' ? 'That email doesn’t look quite right — mind checking it?' : friendly(error?.code),
+        error?.code === '23514' ? 'That email doesn’t look quite right. Mind checking it?' : friendly(error?.code),
     }
   }
   return { ok: true, memberNo: row.member_no, already: row.already_member }

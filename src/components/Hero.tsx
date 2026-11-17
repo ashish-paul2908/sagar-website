@@ -61,10 +61,10 @@ export function Hero() {
         </div>
 
         <figure className="hero__art">
-          <Cover src={EP.cover} alt={`${EP.title} — EP artwork`} title={EP.title} eager />
+          <Cover src={EP.cover} alt={`${EP.title} EP artwork`} title={EP.title} eager />
           <Daisy className="hero__daisy" size={64} />
           <figcaption>
-            <span className="hand">{EP.title}</span> — “{EP.meaning}”
+            <span className="hand">{EP.title}</span>: “{EP.meaning}”
           </figcaption>
         </figure>
       </div>

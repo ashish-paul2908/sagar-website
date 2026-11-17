@@ -33,7 +33,7 @@ export const EP = {
   listenUrl: '' as string,
   logline: 'A tale of love, betrayal, and the aftermath of it all.',
   intro:
-    'Told in sequence, because sequence is the only way this story makes sense: betrayal, then anger, then the grey where love survives it anyway, and the quiet that comes after. It is also a sonic shift — from introspective indie pop into something harder and more textured.',
+    'Told in sequence, because sequence is the only way this story makes sense: betrayal, then anger, then the grey where love survives it anyway, and the quiet that comes after. It is also a sonic shift, from introspective indie pop into something harder and more textured.',
   quote: 'I’ve never felt so naked while writing what I’ve written this year.',
 }
 
@@ -59,7 +59,7 @@ export const CHAPTERS: Chapter[] = [
     state: 'Betrayal',
     sound: 'Pop-rock',
     with: 'with Timothy Thampy',
-    body: 'A betrayal the other person doesn’t know about — told as a narrative. The trigger point. The initial conflict. Everything that follows on this record begins here.',
+    body: 'A betrayal the other person doesn’t know about, told as a narrative. The trigger point. The initial conflict. Everything that follows on this record begins here.',
     released: '1 October 2026',
     spotifyAlbumId: '4n9MFNbR6xr6JTbsHxNBu7',
     tone: '#8a6fa8',
@@ -71,7 +71,7 @@ export const CHAPTERS: Chapter[] = [
     state: 'Anger',
     sound: 'Rock',
     with: 'with Dwai',
-    body: 'The immediate response. Accusation. Making someone your metaphorical criminal — and recognising you were their crime, because of what they did and how they did it. Anger with somewhere to go.',
+    body: 'The immediate response. Accusation. Making someone your metaphorical criminal, and recognising you were their crime, because of what they did and how they did it. Anger with somewhere to go.',
     released: '22 October 2026',
     spotifyAlbumId: '1zwp5SAVhtuJS1OGNSqd0a',
     tone: '#c2462f',
@@ -92,7 +92,7 @@ export const CHAPTERS: Chapter[] = [
     title: 'waqt hi na sahi / kyun nahi',
     state: 'Aftermath',
     sound: 'Rock',
-    body: 'The depressive episode. Introspection turning inward — the quiet that settles once there is nothing left to argue with. The EP’s outro.',
+    body: 'The depressive episode. Introspection turning inward. The quiet that settles once there is nothing left to argue with. The EP’s outro.',
     line: 'Time has made a relationship with pain.',
     released: '19 November 2026',
     tone: '#5f7d9c',
@@ -100,9 +100,9 @@ export const CHAPTERS: Chapter[] = [
 ]
 
 export const BIO = [
-  'Sagar writes about the messy middle — when love stops making sense, and moving on isn’t quite as simple as everyone makes it sound.',
-  'A Mumbai singer-songwriter, guitarist and self-described one-man boy band, Sagar has spent sixteen years obsessing over songwriting: guitar-led, Urdu-rooted songs about the things people feel constantly and say out loud rarely. Over 700 songs written, 26 released — a catalogue built on intricate guitar work, poetic lyricism in Hindi and Urdu, and an instinct to look directly at the parts of being human that are harder to say.',
-  'Their music moves through love, mental health, self-love and identity, often pushing back on ideas of gender conformity — and it has made a home for a fiercely loyal, queer-friendly community of listeners.',
+  'Sagar writes about the messy middle: when love stops making sense, and moving on isn’t quite as simple as everyone makes it sound.',
+  'A Mumbai singer-songwriter, guitarist and self-described one-man boy band, Sagar has spent sixteen years obsessing over songwriting: guitar-led, Urdu-rooted songs about the things people feel constantly and say out loud rarely. Over 700 songs written, 26 released. A catalogue built on intricate guitar work, poetic lyricism in Hindi and Urdu, and an instinct to look directly at the parts of being human that are harder to say.',
+  'Their music moves through love, mental health, self-love and identity, often pushing back on ideas of gender conformity, and it has made a home for a fiercely loyal, queer-friendly community of listeners.',
 ]
 
 export const STATS = [
@@ -116,7 +116,7 @@ export const HIGHLIGHTS = [
   {
     kicker: 'Netflix',
     title: 'Mismatched, Season 3',
-    body: '“Khaamiyan” and “Pyaar Hai” on the soundtrack — plus an on-screen cameo. Both songs charted on Spotify’s Viral India (#23 and #29).',
+    body: '“Khaamiyan” and “Pyaar Hai” on the soundtrack, plus an on-screen cameo. Both songs charted on Spotify’s Viral India (#23 and #29).',
   },
   {
     kicker: 'Spotify editorial',
@@ -131,7 +131,7 @@ export const HIGHLIGHTS = [
   {
     kicker: 'Headliner',
     title: 'Tinder’s Queer Made Weekend',
-    body: 'Headlined the festival — plus a private residency at The Lalit and a college circuit built largely independently.',
+    body: 'Headlined the festival, plus a private residency at The Lalit and a college circuit built largely independently.',
   },
 ]
 
@@ -155,21 +155,21 @@ export const RELEASES: Release[] = [
 
 export const LIVE = {
   cities: 5,
-  window: 'Feb–Mar ’27',
+  window: 'Feb-Mar ’27',
   note: 'five cities · early 2027',
-  body: 'Cities and dates are being locked in right now. Daisies hear first — and get first dibs on tickets.',
+  body: 'Cities and dates are being locked in right now. Daisies hear first and get first dibs on tickets.',
 }
 
 export const BOOKING = {
   body: 'Festivals, college fests, weddings, private and corporate events, brand partnerships, sync and co-writes. Tell us what you have in mind and management will get back to you.',
   formats: [
-    { name: 'Solo', detail: 'Voice and acoustic guitar — intimate rooms, residencies, weddings.' },
+    { name: 'Solo', detail: 'Voice and acoustic guitar. Intimate rooms, residencies, weddings.' },
     { name: 'Duo', detail: 'Stripped back, for private events and smaller stages.' },
-    { name: 'Five-piece', detail: 'Keys, electric guitar, bass and drums — festivals, college fests, headline shows.' },
+    { name: 'Five-piece', detail: 'Keys, electric guitar, bass and drums. Festivals, college fests, headline shows.' },
   ],
 }
 
 export const DAISIES = {
-  body: 'Around the music is The Daisies — 12,000+ people who came for the songs, stayed because they felt a little less alone in them, and found a home in the music and in each other.',
+  body: 'Around the music is The Daisies: 12,000+ people who came for the songs, stayed because they felt a little less alone in them, and found a home in the music and in each other.',
   perks: ['First dibs on tour tickets', 'Exclusive drops around the EP', 'Unreleased songs & voice notes'],
 }

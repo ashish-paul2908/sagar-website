@@ -13,7 +13,7 @@ function DaisyCard({ name, number, member }: { name: string; number: number; mem
       <div className="dcard__face">
         <div className="dcard__holo" aria-hidden="true" />
         <div className="dcard__top">
-          <img src="./logo-mark-ink.webp" alt="" className="dcard__logo" width="70" height="59" />
+          <img src="./sv-logo-ink.webp" alt="" className="dcard__logo" width="70" height="59" />
           <span className="dcard__club">The Daisies</span>
           <Daisy className="dcard__chip" size={40} />
         </div>
@@ -106,8 +106,8 @@ export function Daisies() {
           <p className="lede">
             {memberNo
               ? already
-                ? `You were already Daisy no. ${fmt(memberNo)} — we’d never forget you.`
-                : `You’re officially Daisy no. ${fmt(memberNo)}. Screenshot your card and tag @sagarvermamusic — we’ll be in touch with the good stuff.`
+                ? `You were already Daisy no. ${fmt(memberNo)}. We’d never forget you.`
+                : `You’re officially Daisy no. ${fmt(memberNo)}. Screenshot your card and tag @sagarvermamusic. We’ll be in touch with the good stuff.`
               : DAISIES.body}
           </p>
 

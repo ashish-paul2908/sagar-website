@@ -42,7 +42,7 @@ function BookingForm() {
   if (state === 'sent') {
     return (
       <div className="form-done" role="status">
-        <p className="hand">Got it — thank you!</p>
+        <p className="hand">Got it, thank you!</p>
         <p className="body">We usually reply within two working days. For anything urgent, write to {ARTIST.managementEmail}.</p>
       </div>
     )
@@ -97,7 +97,7 @@ function BookingForm() {
       </div>
       <label>
         <span>Tell us a little more</span>
-        <textarea name="message" required maxLength={4000} rows={5} placeholder="Venue, audience size, budget range — anything that helps." />
+        <textarea name="message" required maxLength={4000} rows={5} placeholder="Venue, audience size, budget range, anything that helps." />
       </label>
       <label className="hp" aria-hidden="true">
         Company <input name="company" tabIndex={-1} autoComplete="off" />

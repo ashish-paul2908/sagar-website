@@ -1,8 +1,9 @@
 /* ───────── Tokens ───────── */
 :root {
-  --bg: #fbf6ec;          /* warm paper */
-  --bg-2: #fffdf8;        /* lighter paper */
-  --ink: #2b2138;         /* deep plum ink — matches the logo */
+  --bg: #f6eedd;          /* warm cream */
+  --bg-2: #f9f2e4;        /* lighter cream */
+  --card: #fdf8ee;        /* cards sit just above the cream */
+  --ink: #2b2138;         /* deep plum ink, matches the logo */
   --ink-soft: #4a3f57;
   --muted: #776c84;
   --line: rgba(43, 33, 56, 0.12);
@@ -213,13 +214,13 @@ a {
   transition: background 0.3s var(--ease), box-shadow 0.3s;
 }
 .nav--solid {
-  background: rgba(251, 246, 236, 0.86);
+  background: rgba(246, 238, 221, 0.88);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 1px 0 var(--line);
 }
 .nav__logo img {
-  height: 64px;
+  height: 58px;
   width: auto;
 }
 .nav__logo-light {
@@ -347,7 +348,7 @@ a {
     z-index: 2;
   }
   .nav__logo img {
-    height: 50px;
+    height: 46px;
   }
 }
 
@@ -374,7 +375,7 @@ a {
       #26245c calc(100% - 300px),
       #4a3f80 calc(100% - 220px),
       #9d8cc8 calc(100% - 130px),
-      #e9e0f3 calc(100% - 50px),
+      #ebdfee calc(100% - 50px),
       var(--bg-2) 100%
     );
 }
@@ -405,7 +406,7 @@ a {
   border-radius: 50%;
   box-shadow: inset -14px 8px 0 0 var(--moonlight);
   filter: drop-shadow(0 0 18px rgba(253, 246, 227, 0.55));
-  transform: rotate(-20deg);
+  transform: scaleY(-1) rotate(-20deg);
 }
 .shooting {
   position: absolute;
@@ -929,7 +930,7 @@ a {
   display: flex;
   flex-direction: column;
   border-radius: var(--radius);
-  background: var(--bg-2);
+  background: var(--card);
   box-shadow: var(--shadow);
 }
 .stats li:nth-child(1) {
@@ -958,7 +959,7 @@ a {
 .card {
   padding: 26px;
   border-radius: var(--radius);
-  background: var(--bg-2);
+  background: var(--card);
   box-shadow: var(--shadow);
 }
 .card__title {
@@ -1094,7 +1095,7 @@ a {
   display: grid;
   grid-template-columns: 120px 1fr auto;
   align-items: center;
-  background: var(--bg-2);
+  background: var(--card);
   border-radius: 16px;
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -1445,7 +1446,7 @@ a.stub__tag:hover {
 .book .form {
   padding: clamp(20px, 3vw, 32px);
   border-radius: 22px;
-  background: var(--bg-2);
+  background: var(--card);
   box-shadow: var(--shadow);
 }
 @media (max-width: 860px) {
@@ -1517,7 +1518,7 @@ a.stub__tag:hover {
 .form-done {
   padding: 28px;
   border-radius: 22px;
-  background: var(--bg-2);
+  background: var(--card);
   box-shadow: var(--shadow);
 }
 .form-done .hand {

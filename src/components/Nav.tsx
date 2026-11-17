@@ -26,9 +26,9 @@ export function Nav() {
   }, [])
   return (
     <header className={`nav ${scrolled ? 'nav--solid' : ''} ${onSky ? 'nav--sky' : ''} ${open ? 'nav--open' : ''}`}>
-      <a href="#top" className="nav__logo" aria-label="Sagar Verma — home" onClick={() => setOpen(false)}>
-        <img className="nav__logo-light" src="./logo-mark.webp" alt="Sagar Verma" width="73" height="64" />
-        <img className="nav__logo-ink" src="./logo-mark-ink.webp" alt="" aria-hidden="true" width="73" height="64" />
+      <a href="#top" className="nav__logo" aria-label="Sagar Verma, home" onClick={() => setOpen(false)}>
+        <img className="nav__logo-light" src="./sv-logo-light.webp" alt="Sagar Verma" width="67" height="58" />
+        <img className="nav__logo-ink" src="./sv-logo-ink.webp" alt="" aria-hidden="true" width="67" height="58" />
       </a>
       <button className="nav__toggle" aria-expanded={open} aria-controls="nav-links" onClick={() => setOpen(!open)}>
         <span className="sr-only">Menu</span>

@@ -1,6 +1,6 @@
 type Props = { size?: number; petal?: string; className?: string; style?: React.CSSProperties }
 
-/** The daisy from Sagar's logo — the community mark. */
+/** The daisy from Sagar's logo, the community mark. */
 export function Daisy({ size = 28, petal = 'var(--daisy)', className, style }: Props) {
   return (
     <svg className={className} style={style} width={size} height={size} viewBox="-32 -32 64 64" aria-hidden="true">

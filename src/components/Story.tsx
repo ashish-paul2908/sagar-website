@@ -31,7 +31,7 @@ export function Story() {
         <div className="story__copy" data-reveal>
           <p className="kicker">Story</p>
           <h2 className="h2">
-            Singer, songwriter, storyteller — and a self-described <span className="hand">one-man boy band.</span>
+            Singer, songwriter, storyteller and a self-described <span className="hand">one-man boy band.</span>
           </h2>
           {BIO.map((p) => (
             <p key={p.slice(0, 20)} className="body">
