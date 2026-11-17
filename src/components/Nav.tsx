@@ -10,17 +10,25 @@ const items = [
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false)
+  const [onSky, setOnSky] = useState(true)
   const [open, setOpen] = useState(false)
   useEffect(() => {
-    const on = () => setScrolled(window.scrollY > 40)
+    const on = () => {
+      setScrolled(window.scrollY > 40)
+      // light-on-dark while the nav still sits over the night sky
+      const hero = document.getElementById('top')
+      const skyEnd = hero ? hero.offsetHeight * 0.72 : 600
+      setOnSky(window.scrollY < skyEnd)
+    }
     on()
     window.addEventListener('scroll', on, { passive: true })
     return () => window.removeEventListener('scroll', on)
   }, [])
   return (
-    <header className={`nav ${scrolled ? 'nav--solid' : ''} ${open ? 'nav--open' : ''}`}>
+    <header className={`nav ${scrolled ? 'nav--solid' : ''} ${onSky ? 'nav--sky' : ''} ${open ? 'nav--open' : ''}`}>
       <a href="#top" className="nav__logo" aria-label="Sagar Verma — home" onClick={() => setOpen(false)}>
-        <img src="./logo-mark-ink.webp" alt="Sagar Verma" width="96" height="80" />
+        <img className="nav__logo-light" src="./logo-mark.webp" alt="Sagar Verma" width="73" height="64" />
+        <img className="nav__logo-ink" src="./logo-mark-ink.webp" alt="" aria-hidden="true" width="73" height="64" />
       </a>
       <button className="nav__toggle" aria-expanded={open} aria-controls="nav-links" onClick={() => setOpen(!open)}>
         <span className="sr-only">Menu</span>

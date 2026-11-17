@@ -135,14 +135,15 @@ export const HIGHLIGHTS = [
   },
 ]
 
-export type Release = { title: string; year: number; with?: string; cover: string; url: string; note?: string }
+// `with`: Sagar's song featuring others. `by`: someone else's song that Sagar features on.
+export type Release = { title: string; year: number; with?: string; by?: string; cover: string; url: string; note?: string }
 
 export const RELEASES: Release[] = [
   { title: 'gunaah', year: 2026, with: 'Dwai', cover: spotifyCover('1704ece7eedb2db2f3c83115'), url: 'https://open.spotify.com/album/1zwp5SAVhtuJS1OGNSqd0a' },
   { title: 'usey pata bhi nahi', year: 2026, with: 'Timothy Thampy', cover: spotifyCover('73e9ae1cf88cc6d7d4181bf0'), url: 'https://open.spotify.com/album/4n9MFNbR6xr6JTbsHxNBu7' },
-  { title: 'Ittefaq', year: 2026, with: 'Deepika Seth, Rohan Upadeo', cover: spotifyCover('a08dd4d7a8c76ce5da530f00'), url: LINKS.spotify },
+  { title: 'Ittefaq', year: 2026, by: 'Deepika Seth', cover: spotifyCover('a08dd4d7a8c76ce5da530f00'), url: LINKS.spotify },
   { title: 'Jaaoge Toh', year: 2026, with: 'Nidhi Wagle', cover: spotifyCover('f23e9a2c8386cd91ec22fdbb'), url: 'https://open.spotify.com/album/6qGUHGcSTWe1TvRVyjM7eE' },
-  { title: 'Saza', year: 2026, with: 'Sanjeeta Bhattacharya', cover: spotifyCover('75a2f60a11b76cdeeb58277f'), url: 'https://open.spotify.com/album/6qI2m8VHBk6sA9eWEn0gFl' },
+  { title: 'Saza', year: 2026, by: 'Sanjeeta Bhattacharya', cover: spotifyCover('75a2f60a11b76cdeeb58277f'), url: 'https://open.spotify.com/album/6qI2m8VHBk6sA9eWEn0gFl' },
   { title: 'aasaan mohabbatein', year: 2025, with: 'Gup Shup, Meera', cover: spotifyCover('b9303cf2d89fb0361215ff17'), url: LINKS.spotify },
   { title: 'Khaamiyan', year: 2024, note: 'Mismatched S3 · Netflix', cover: spotifyCover('a4be3815bbbcb3b5ebc0bf61'), url: LINKS.spotify },
   { title: 'awaaz bhi na aayi', year: 2024, with: 'Samahita Narang', cover: spotifyCover('d7da400f1910e4f176be5b39'), url: LINKS.spotify },

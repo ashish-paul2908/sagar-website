@@ -36,6 +36,7 @@ export function Music() {
                 <span className="release__meta">
                   {r.year}
                   {r.with ? ` · with ${r.with}` : ''}
+                  {r.by ? ` · ${r.by}’s song, ft. Sagar` : ''}
                   {r.note ? ` · ${r.note}` : ''}
                 </span>
               </a>

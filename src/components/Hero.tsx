@@ -2,6 +2,7 @@ import { EP, LINKS } from '../content'
 import { useCountdown } from '../lib/hooks'
 import { Daisy } from './Daisy'
 import { Cover } from './Cover'
+import { NightSky } from './NightSky'
 
 const pad = (n: number) => String(n).padStart(2, '0')
 
@@ -10,7 +11,7 @@ export function Hero() {
   const listen = EP.listenUrl || LINKS.spotify
   return (
     <section id="top" className="hero">
-      <div className="hero__bg" style={{ backgroundImage: `url(${EP.cover})` }} aria-hidden="true" />
+      <NightSky />
       <div className="hero__inner wrap">
         <div className="hero__copy">
           <p className="kicker">{c.done ? 'Out now' : `Out ${EP.releaseLabel}`} · the debut solo EP</p>
